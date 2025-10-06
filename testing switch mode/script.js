@@ -1,4 +1,4 @@
-// alert("Selamat datang di project web statis kelompok 7")
+alert("Selamat datang di project web statis kelompok 7");
 
 const toggle = document.getElementById("darkmode");
 const body = document.body;

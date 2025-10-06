@@ -11,6 +11,10 @@
       href="logo_kel_7-removebg-preview.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Artikel</title>
     <script src="script.js" defer></script>
   </head>
@@ -22,12 +26,12 @@
         <img src="v[1].png" width="100px" alt="Logo website" />
       </div>
       <div class="team-seven">
-        <h1 class="Judul"><strong>│Team Seven </strong></h1>
+        <h1><strong>│Team Seven </strong></h1>
       </div>
       <!-- ini buat tombol switch ya harusnya karena setelah list list di sebelah kiri ada switch button -->
       <div class="switchmode">
         <input type="checkbox" id="darkmode" />
-        <label for="darkmode" class="toggle">
+        <label for="darkmode">
           <svg
             class="sun"
             xmlns="http://www.w3.org/2000/svg"
@@ -114,20 +118,26 @@
         </label>
       </div>
     </div>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav>
-      <ul>
+      <!-- Tombol Hamburger -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <!-- Menu -->
+      <ul id="myLinks">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="html-article.html">HTML</a></li>
         <li><a href="css-article.html">CSS</a></li>
-        <li><a href="js-article.html">JS</a></li>
+        <li><a href="js-article.html">JavaScript</a></li>
         <li><a href="penutup.html">Penutup</a></li>
-        <!-- text berjalan -->
-        <!-- <marquee behavior="scroll" direction="left"
-          >TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA
-          JAYA JAYA JAYA JAYA JAYA JAYA JAYA
-        </marquee> -->
       </ul>
+
+      <!-- Text Berjalan -->
+      <marquee behavior="scroll" direction="left">
+        TEAM SEVEN │ SEKTE CRIPTO VERSI PENUS │ JAYA JAYA JAYA JAYA JAYA
+      </marquee>
     </nav>
     <!-- Judul -->
     <header><h1>Website Tentang Sejarah HTML,CSS,Dan JavaScript</h1></header>

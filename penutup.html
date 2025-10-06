@@ -115,6 +115,7 @@
       </div>
     </div>
     <!-- navbar -->
+    <!-- navbar -->
     <nav>
       <ul>
         <li><a href="index.html">Beranda</a></li>
@@ -123,23 +124,102 @@
         <li><a href="js-article.html">JS</a></li>
         <li><a href="penutup.html">Penutup</a></li>
         <!-- text berjalan -->
-        <!-- <marquee behavior="scroll" direction="left"
-          >TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA
+        <marquee behavior="scroll" direction="left">
+          TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA
           JAYA JAYA JAYA JAYA JAYA JAYA JAYA
-        </marquee> -->
+        </marquee>
       </ul>
     </nav>
     <!-- Judul -->
     <header><h1>Website Tentang Sejarah HTML,CSS,Dan JavaScript</h1></header>
-    <!-- Kata pengantar -->
-    <article>
-      <h2>Kata pengantar</h2>
-      <span style="cursor: pointer">
-      <p>
-        HTML,CSS,dan JavaScript adalah script yang sering di pakai untuk
-        membangun web. dalam artikel ini kita akan membahas sejarah HTML,CSS,Dan
-        JavaScript.
-      </p>
-    </article>
+    <!--   Form Rating -->
+    <form
+      action="https://formsubmit.co/team7cripto@gmail.com"
+      method="POST"
+      class="review-form"
+    >
+      <h3>⭐ Write a Review</h3>
+      <!-- styling dari sini -->
+      <div class="form-group">
+        <label for="product-rating">Overall Rating *</label>
+        <div class="rating-input">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5">⭐⭐⭐⭐⭐ Excellent</label>
+
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4">⭐⭐⭐⭐ Good</label>
+
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3">⭐⭐⭐ Average</label>
+
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2">⭐⭐ Poor</label>
+
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1">⭐ Terrible</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="review-title">Review Title *</label>
+        <input
+          type="text"
+          id="review-title"
+          name="title"
+          placeholder="Sum up your review in one line"
+          required
+          maxlength="100"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="email"
+          name="email"
+          placeholder="Example@gmail.com"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="review-text">Your Review *</label>
+        <textarea
+          id="review-text"
+          name="review"
+          placeholder="Share your experience with this website..."
+          required
+          minlength="20"
+          maxlength="1000"
+          rows="6"
+        ></textarea>
+        <small>Minimum 20 characters required</small>
+      </div>
+
+      <div class="form-group">
+        <label for="recommend">Did you like this website</label>
+        <select id="recommend" name="recommend" required>
+          <option value="">Choose...</option>
+          <option value="yes">👍 Yes, definitely!</option>
+          <option value="maybe">🤔 Maybe</option>
+          <option value="no">👎 No, not really</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="photos">📸 Add Photos (Optional)</label>
+        <input
+          type="file"
+          id="photos"
+          name="photos"
+          accept="image/*"
+          multiple
+        />
+        <small>Upload up to 5 photos of cool thing about the website </small>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">📝 Submit Review</button>
+      </div>
+    </form>
+    <!-- lalu styling sampai sini -->
   </body>
 </html>
+<style></style>

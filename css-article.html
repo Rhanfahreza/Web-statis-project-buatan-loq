@@ -10,20 +10,108 @@
       type="image/x-icon"
     />
     <title>Artikel</title>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <!-- navbar -->
-    <div class="logo-img">
-      <img src="v[1].png" width="100px" alt="Logo website" />
-      <h1><strong>│Team Seven </strong></h1>
-      <img
-        class="sekte7"
-        src="ultinolan.webp"
-        width="100px"
-        height="100px"
-        alt="sektetujuh"
-      />
+    <!-- navbar -->
+    <div class="header">
+      <div class="logo-img">
+        <img src="v[1].png" width="100px" alt="Logo website" />
+      </div>
+      <div class="team-seven">
+        <h1 class="Judul"><strong>│Team Seven </strong></h1>
+      </div>
+      <!-- ini buat tombol switch ya harusnya karena setelah list list di sebelah kiri ada switch button -->
+      <div class="switchmode">
+        <input type="checkbox" id="darkmode" />
+        <label for="darkmode" class="toggle">
+          <svg
+            class="sun"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="_x32_"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+          >
+            <g>
+              <ellipse class="st0" cx="256" cy="256" rx="137.275" ry="137.28" />
+              <rect x="241.16" class="st0" width="29.68" height="81.62" />
+              <rect
+                x="241.16"
+                y="430.38"
+                class="st0"
+                width="29.68"
+                height="81.62"
+              />
+              <polygon
+                class="st0"
+                points="181.665,97.56 140.855,26.88 115.15,41.72 155.96,112.41  "
+              />
+
+              <rect
+                x="322.784"
+                y="427.522"
+                transform="matrix(-0.5001 -0.866 0.866 -0.5001 162.3364 978.4368)"
+                class="st0"
+                width="81.618"
+                height="29.677"
+              />
+              <polygon
+                class="st0"
+                points="26.88,140.85 97.565,181.66 112.41,155.96 41.72,115.15  "
+              />
+              <polygon
+                class="st0"
+                points="399.594,356.04 470.285,396.85 485.125,371.15 414.435,330.34  "
+              />
+              <rect y="241.16" class="st0" width="81.625" height="29.68" />
+              <rect
+                x="430.375"
+                y="241.16"
+                class="st0"
+                width="81.625"
+                height="29.68"
+              />
+              <polygon
+                class="st0"
+                points="26.88,371.14 41.72,396.85 112.406,356.04 97.565,330.33  "
+              />
+              <polygon
+                class="st0"
+                points="485.125,140.85 470.285,115.15 399.594,155.96 414.435,181.66  "
+              />
+
+              <rect
+                x="133.566"
+                y="401.543"
+                transform="matrix(-0.866 -0.5 0.5 -0.866 55.7691 899.6527)"
+                class="st0"
+                width="29.682"
+                height="81.624"
+              />
+              <polygon
+                class="st0"
+                points="330.335,97.56 356.04,112.41 396.85,41.72 371.15,26.88  "
+              />
+            </g>
+          </svg>
+          <svg
+            class="moon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="800px"
+            height="17px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 21.8a9.796 9.796 0 0 1-1.245-19.513l1.286-.163-.843.984a8.285 8.285 0 0 0 8.519 13.383l1.252-.347-.696 1.096A9.755 9.755 0 0 1 12 21.8zM9.647 3.526a8.796 8.796 0 1 0 9.031 14.196 9.048 9.048 0 0 1-1.178.078A9.293 9.293 0 0 1 9.647 3.526z"
+            />
+            <path />
+          </svg>
+        </label>
+      </div>
     </div>
     <nav>
       <ul>
@@ -31,7 +119,7 @@
         <li><a href="html-article.html">HTML</a></li>
         <li><a href="css-article.html">CSS</a></li>
         <li><a href="js-article.html">JS</a></li>
-        <li><a href="#">Penutup</a></li>
+        <li><a href="penutup.html">Penutup</a></li>
         <marquee behavior="scroll" direction="left"
           >TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA
           JAYA JAYA JAYA JAYA JAYA JAYA JAYA
@@ -40,10 +128,11 @@
     </nav>
     <article>
       <header>
-        <h1>artikel html,css,js</h1>
+        <h1>Artikel html, css, wjs</h1>
       </header>
       <main>
         <h2>Sejarah CSS</h2>
+        <span style="cursor: pointer">
         <p>
           Nama CSS didapat dari fakta bahwa setiap deklarasi style yang berbeda
           dapat diletakkan secara berurutan, yang kemudian membentuk hubungan
@@ -52,6 +141,51 @@
           Consortium atau W3C pada tahun 1996. Setelah CSS distandardisasikan,
           Internet Explorer dan NNetscape melepas browser terbaru mereka yang
           telah sesuai atau paling tidak hampir mendekati dengan standar CSS.
+        </p>
+        <p>
+          CSS dikembangkan oleh Hakon Wium Lie pada tahun 1994 saat ia bekerja
+          di CERN (Organisasi Eropa untuk Riset Nuklir) di Swiss. Saat itu, ia
+          mengusulkan sebuah cara untuk menambahkan style pada halaman web.
+          Setelah itu, pada tahun 1995, Hakon Wium Lie bergabung dengan Tim
+        </p>
+        <p>
+          Berners-Lee di W3C (World Wide Web Consortium) dan bekerja sama dengan
+          Bert Bos, yang pada saat itu sedang mengerjakan sebuah proposal
+          serupa yang disebut CSS. Pada bulan Desember 1996, W3C merilis CSS1
+          sebagai rekomendasi resmi.
+        </p>
+        <p>
+          Pada tahun 1998, W3C merilis CSS2 yang menambahkan fitur-fitur baru
+          seperti positioning, z-index, dan media types. Namun, adopsi CSS2
+          lambat karena banyak browser pada saat itu belum mendukungnya dengan
+          baik.
+        </p>
+        <p>
+          Pada tahun 2000-an, pengembangan CSS3 dimulai dengan tujuan untuk
+          memecah spesifikasi menjadi modul-modul yang lebih kecil dan lebih
+          mudah dikelola. Ini memungkinkan pengembangan dan adopsi fitur-fitur
+          baru secara lebih cepat. Beberapa fitur populer dari CSS3 termasuk
+          border-radius, box-shadow, dan media queries.
+        </p>
+        <p>
+          Pada awal 2000-an, pengembangan CSS3 dimulai dengan tujuan untuk
+          memecah spesifikasi menjadi modul-modul yang lebih kecil dan lebih
+          mudah dikelola. Ini memungkinkan pengembangan dan adopsi fitur-fitur
+          baru secara lebih cepat. Beberapa fitur populer dari CSS3 termasuk
+          border-radius, box-shadow, dan media queries.
+        </p>
+        <p>
+          Saat ini, CSS terus berkembang dengan penambahan fitur-fitur baru dan
+          peningkatan dukungan di berbagai browser. CSS telah menjadi salah
+          satu teknologi inti dalam pengembangan web modern, memungkinkan
+          desainer dan pengembang untuk menciptakan tampilan yang menarik dan
+          responsif untuk situs web.
+        </p>
+        <p>
+          Secara umum, CSS telah mengalami perjalanan panjang sejak
+          pengembangannya pada tahun 1994. Dari CSS1 yang sederhana hingga
+          CSS3 yang kaya fitur, CSS telah menjadi alat penting dalam desain web
+          modern.
         </p>
         <p>
           Untuk saat ini terdapat tiga versi CSS, yaitu CSS1, CSS2, CSS3. CSS1
@@ -71,6 +205,10 @@
           pada CSS3, seperti: multiple background, border-radius, drop-shadow,
           border-image, CSS Math, dan CSS Object Model.
         </p>
+        <p>
+
+        </p>
+        <p>
       </main>
     </article>
   </body>

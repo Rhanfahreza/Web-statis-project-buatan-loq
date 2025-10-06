@@ -1,0 +1,215 @@
+:root {
+  --base-color: white;
+  --base-text: black;
+  --base-nav: purple;
+}
+
+.darkmode {
+  --base-color: black;
+  --base-text: white;
+  --base-nav: violet;
+}
+
+/* GLOBAL STYLING */
+html {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  background-color: var(--base-color);
+  color: var(--base-text);
+}
+
+/* NAVBAR */
+nav {
+  background: var(--base-color);
+  padding: 5px 0;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid black;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--base-text);
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--base-nav);
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ae75da;
+  padding: 10px 20px;
+}
+
+.logo-img img {
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.team-seven strong {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+/* SWITCH MODE BUTTON */
+.switchmode {
+  margin-right: 40px;
+}
+
+label {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background: var(--base-color);
+  border-radius: 40px;
+  box-shadow: inset 0px 0px 15px black, inset 0px 0px 25px gray;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, var(--base-nav), var(--base-color));
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background: var(--base-color);
+}
+
+input:checked + label::after {
+  left: 90px;
+  transform: translateX(-100%);
+  background: linear-gradient(135deg, var(--base-text), var(--base-color));
+}
+
+label svg {
+  position: absolute;
+  width: 15px;
+  top: 12px;
+  z-index: 3;
+}
+
+label svg.sun {
+  left: 13px;
+  fill: white;
+}
+
+label svg.moon {
+  left: 75px;
+  fill: black;
+}
+
+input:checked + label svg.sun {
+  fill: black;
+}
+
+input:checked + label svg.moon {
+  fill: white;
+}
+
+/* ARTICLE */
+article {
+  margin: 40px 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #000000, #bc12cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* DARK MODE */
+body.darkmode {
+  background: var(--base-color);
+  color: var(--base-text);
+}
+
+body.darkmode nav {
+  background-color: var(--base-nav);
+}
+
+/* MENU & ICON */
+.icon {
+  display: none; /* disembunyikan, akan muncul di layar kecil */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: center;
+}
+
+/* RESPONSIVE MODE */
+@media only screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  ul.show {
+    display: flex;
+  }
+
+  .icon {
+    display: block;
+    margin: 10px;
+  }
+}

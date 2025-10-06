@@ -7,28 +7,115 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo_kel_7-removebg-preview.png" type="image/x-icon">
     <title>Artikel</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="logo-img">
-      <img src="v[1].png" width="100px" alt="Logo website" />
-      <h1><strong>│Team Seven </strong></h1>
-      <img
-        class="sekte7"
-        src="ultinolan.webp"
-        width="100px"
-        height="100px"
-        alt="sektetujuh"
-      />
+    <div class="header">
+      <div class="logo-img">
+        <img src="v[1].png" width="100px" alt="Logo website" />
+      </div>
+      <div class="team-seven">
+        <h1 class="judul"><strong>│Team Seven </strong></h1>
+      </div>
+      <!-- ini buat tombol switch ya harusnya karena setelah list list di sebelah kiri ada switch button -->
+      <div class="switchmode">
+        <input type="checkbox" id="darkmode" />
+        <label for="darkmode" class="toggle">
+          <svg
+            class="sun"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="_x32_"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+          >
+            <g>
+              <ellipse class="st0" cx="256" cy="256" rx="137.275" ry="137.28" />
+              <rect x="241.16" class="st0" width="29.68" height="81.62" />
+              <rect
+                x="241.16"
+                y="430.38"
+                class="st0"
+                width="29.68"
+                height="81.62"
+              />
+              <polygon
+                class="st0"
+                points="181.665,97.56 140.855,26.88 115.15,41.72 155.96,112.41  "
+              />
+
+              <rect
+                x="322.784"
+                y="427.522"
+                transform="matrix(-0.5001 -0.866 0.866 -0.5001 162.3364 978.4368)"
+                class="st0"
+                width="81.618"
+                height="29.677"
+              />
+              <polygon
+                class="st0"
+                points="26.88,140.85 97.565,181.66 112.41,155.96 41.72,115.15  "
+              />
+              <polygon
+                class="st0"
+                points="399.594,356.04 470.285,396.85 485.125,371.15 414.435,330.34  "
+              />
+              <rect y="241.16" class="st0" width="81.625" height="29.68" />
+              <rect
+                x="430.375"
+                y="241.16"
+                class="st0"
+                width="81.625"
+                height="29.68"
+              />
+              <polygon
+                class="st0"
+                points="26.88,371.14 41.72,396.85 112.406,356.04 97.565,330.33  "
+              />
+              <polygon
+                class="st0"
+                points="485.125,140.85 470.285,115.15 399.594,155.96 414.435,181.66  "
+              />
+
+              <rect
+                x="133.566"
+                y="401.543"
+                transform="matrix(-0.866 -0.5 0.5 -0.866 55.7691 899.6527)"
+                class="st0"
+                width="29.682"
+                height="81.624"
+              />
+              <polygon
+                class="st0"
+                points="330.335,97.56 356.04,112.41 396.85,41.72 371.15,26.88  "
+              />
+            </g>
+          </svg>
+          <svg
+            class="moon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="800px"
+            height="17px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 21.8a9.796 9.796 0 0 1-1.245-19.513l1.286-.163-.843.984a8.285 8.285 0 0 0 8.519 13.383l1.252-.347-.696 1.096A9.755 9.755 0 0 1 12 21.8zM9.647 3.526a8.796 8.796 0 1 0 9.031 14.196 9.048 9.048 0 0 1-1.178.078A9.293 9.293 0 0 1 9.647 3.526z"
+            />
+            <path />
+          </svg>
+        </label>
+      </div>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html">Beranda</a></li> 
         <li><a href="html-article.html">HTML</a></li>
         <li><a href="css-article.html">CSS</a></li>
         <li><a href="js-article.html">JS</a></li>
-        <li><a href="#">Penutup</a></li>
+        <li><a href="penutup.html">Penutup</a></li>
         <marquee behavior="scroll" direction="left"
           >TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA
           JAYA JAYA JAYA JAYA JAYA JAYA JAYA
@@ -39,19 +126,132 @@
     <main>
         <article>
             <h2>Sejarah JavaScript</h2>
-            <p>JavaScript pertama kali dikembangkan oleh Brendan Eich dari Netscape di bawah nama Mocha, yang nantinya
-                namanya diganti menjadi LiveScript, dan akhirnya menjadi JavaScript.</p>
-            <p>Navigator sebelumnya telah mendukung Java untuk lebih bisa dimanfaatkan para pemrogram yang non Java.
-                Maka dikembangkanlah bahasa pemrograman bernama LiveScript untuk mengakomodasi hal tersebut. Bahasa
-                pemrograman inilah yang akhirnya berkembang dan diberi nama JavaScript, walaupun tidak ada hubungan
-                bahasa antara Java dengan JavaScript.</p>
-            <p>JavaScript bisa digunakan untuk banyak tujuan, misalnya untuk membuat efek rollover baik di gambar maupun
-                teks, dan yang penting juga adalah untuk membuat AJAX. JavaScript adalah bahasa yang digunakan untuk
-                AJAX.</p>
-            
-        </article>
+            <span style="cursor: pointer">
+              <h2>Awal Mula Kemunculan JavaScript</h2>
+            <p>Perjalanan panjang HTML, dari ENQUIRE (1980) hingga HTML5 (2014), menunjukkan evolusi luar biasa dari sebuah ide sederhana untuk berbagi dokumen menjadi fondasi bagi seluruh dunia digital modern.
 
-        </article>
+            HTML terus berkembang bersama teknologi pendukung seperti CSS untuk desain dan JavaScript untuk interaktivitas. Kombinasi ketiganya menjadikan web tempat di mana siapa pun dapat berkreasi, belajar, dan berinovasi.
+
+            Tanpa dedikasi Tim Berners-Lee dan komunitas pengembang awalnya, mungkin dunia tidak akan memiliki web seperti yang kita kenal sekarang — terbuka, terhubung, dan penuh kemungkinan tanpa batas.</p>
+
+            <h2>Dari Mocha ke LiveScript hingga JavaScript</h2>
+            <p>Setelah versi awal Mocha selesai, Netscape mulai bereksperimen dengan bahasa tersebut. Mereka kemudian mengganti namanya menjadi LiveScript pada tahap berikutnya. Alasan pergantian nama ini adalah karena bahasa tersebut dirancang agar “hidup” di dalam halaman web — dapat berinteraksi dengan pengguna tanpa harus memuat ulang halaman.
+
+            Namun, pada saat yang sama, Java sedang menjadi tren besar di dunia pemrograman. Bahasa Java yang dikembangkan oleh Sun Microsystems menawarkan kemampuan pemrograman berorientasi objek (OOP) dan digunakan secara luas di berbagai aplikasi. Untuk tujuan pemasaran dan strategi bisnis, Netscape bekerja sama dengan Sun Microsystems dan memutuskan untuk menamai ulang LiveScript menjadi JavaScript, agar terdengar seolah-olah memiliki hubungan dengan Java.
+
+            Padahal, secara teknis, JavaScript tidak memiliki hubungan langsung dengan Java.
+            Perbedaan mereka sangat mendasar:
+
+            Java adalah bahasa yang dikompilasi (compiled language), sementara
+
+            JavaScript adalah bahasa yang diinterpretasi (interpreted language).
+
+            Meskipun namanya mirip, keduanya memiliki filosofi dan tujuan yang sangat berbeda.</p>
+
+            <h2>Tujuan Awal JavaScript</h2>
+            <p>Tujuan utama diciptakannya JavaScript adalah untuk memudahkan interaktivitas di web. Sebelum JavaScript hadir, hampir semua halaman web bersifat statis. Jika pengguna mengisi form dan ingin mengirimkannya, maka datanya harus dikirim ke server dulu untuk diproses. Dengan JavaScript, hal-hal sederhana seperti validasi form, penggantian warna tombol, atau efek animasi bisa dilakukan langsung di browser tanpa perlu server.
+
+            Contoh awal penggunaan JavaScript antara lain:
+
+            Menampilkan pesan menggunakan alert("Halo Dunia!");
+
+            Mengubah warna teks atau latar belakang halaman.
+
+            Mengecek apakah form sudah diisi sebelum dikirim.
+
+            Menambahkan efek animasi sederhana di halaman web.
+
+            Hal-hal tersebut terlihat sederhana, tapi pada masa itu, JavaScript menjadi revolusi besar dalam pengembangan web.  </p>
+
+            <h2>Standarisasi dan Lahirnya ECMAScript</h2>
+            <p>
+             ada tahun 1996, Microsoft merilis browser Internet Explorer dan memperkenalkan versi JavaScript mereka sendiri yang diberi nama JScript. Karena tidak ada standar resmi saat itu, setiap browser memiliki implementasi JavaScript yang sedikit berbeda. Hal ini menyebabkan banyak masalah kompatibilitas — kode JavaScript yang berjalan dengan baik di Netscape bisa saja tidak berfungsi di Internet Explorer, dan sebaliknya.
+
+            Untuk mengatasi kekacauan tersebut, Netscape membawa bahasa JavaScript ke organisasi ECMA International (European Computer Manufacturers Association) agar dijadikan standar resmi. Dari proses ini, pada tahun 1997, lahirlah standar ECMAScript (ES).
+            JavaScript adalah implementasi paling terkenal dari ECMAScript.
+
+            Versi-versi awal ECMAScript antara lain:
+
+            ES1 (1997): versi standar pertama.
+
+            ES2 (1998): perbaikan kecil pada spesifikasi.
+
+            ES3 (1999): menambahkan fitur baru seperti try...catch, ekspresi reguler, dan peningkatan besar lainnya.
+
+            Setelah ES3, pengembangan JavaScript sempat melambat karena perbedaan pandangan antara komunitas pengembang dan perusahaan-perusahaan besar seperti Microsoft. Namun, pada akhirnya bahasa ini kembali berevolusi secara cepat.
+            </p>
+
+            <h2>Masa Vakum dan Kelahiran ES5</h2>
+            <p>
+              Setelah ES3 dirilis, pengembangan ECMAScript versi selanjutnya (ES4) sempat mengalami perdebatan panjang. Beberapa pengembang ingin menjadikan JavaScript lebih kuat dengan fitur-fitur seperti class, module, dan tipe data baru. Namun, pihak lain berpendapat bahwa perubahan besar akan membuat JavaScript kehilangan kesederhanaannya.
+
+              Akhirnya, ES4 dibatalkan dan digantikan oleh ES5 (2009) yang membawa banyak peningkatan penting seperti:
+
+              Strict mode ("use strict";)
+
+              JSON support (JSON.parse() dan JSON.stringify())
+
+              Method array baru seperti forEach(), map(), dan filter()
+
+              Getter dan setter pada objek
+
+              ES5 menjadi fondasi kuat bagi JavaScript modern dan banyak digunakan hingga kini.
+            </p>
+
+            <h2>Revolusi ES6 (ECMAScript 2015)</h2>
+            <p>
+              Versi ES6 atau ECMAScript 2015 adalah tonggak besar dalam sejarah JavaScript. Hampir seluruh fitur modern yang kita kenal sekarang lahir dari sini.
+              Beberapa fitur penting ES6 antara lain:
+
+              let dan const: pengganti var untuk deklarasi variabel dengan aturan scope yang lebih jelas.
+
+              Arrow function (=>): cara singkat menulis fungsi.
+
+              Template literal: memungkinkan penggunaan string dengan ekspresi di dalamnya menggunakan backtick (` `).
+
+              Class dan inheritance: penulisan berorientasi objek yang lebih mudah dipahami.
+
+              Module (import dan export): memungkinkan pemisahan kode menjadi bagian-bagian kecil.
+
+              Promise: untuk menangani operasi asynchronous seperti pengambilan data dari server.
+
+              Dengan hadirnya ES6, JavaScript menjadi bahasa yang jauh lebih kuat dan efisien, tidak hanya untuk web tetapi juga untuk aplikasi skala besar.
+            </p>
+
+            <h2>JavaScript Modern: ES7 hingga Sekarang</h2>
+            <p>Setelah ES6, ECMAScript mulai merilis versi baru setiap tahun.
+              Beberapa peningkatan berikutnya antara lain:
+
+              ES7 (2016): menambahkan operator eksponensial (**) dan Array.prototype.includes().
+
+              ES8 (2017): memperkenalkan async/await untuk menangani asynchronous dengan lebih mudah.
+
+              ES9 (2018): mendukung rest/spread object dan perbaikan asinkronitas.
+
+              ES10–ES13 (2019–2022): menambah fitur seperti optional chaining (?.), nullish coalescing (??), dan BigInt untuk angka besar.Kini JavaScript terus</p>
+
+          <h2>Penggunaan JavaScript di Dunia Nyataa</h2>
+          <article>
+            Dulu JavaScript hanya berjalan di browser, tapi sekarang penggunaannya jauh lebih luas.
+            Beberapa contohnya:
+
+            Front-End Development
+            Framework seperti React, Vue.js, dan Angular dibangun menggunakan JavaScript.
+            Mereka memungkinkan pembuatan antarmuka pengguna (UI) yang interaktif, responsif, dan dinamis.
+
+            Back-End Development
+            Dengan hadirnya Node.js, JavaScript kini juga bisa berjalan di sisi server.
+            Artinya, pengembang bisa menggunakan JavaScript untuk menulis logika backend, API, bahkan sistem server penuh.
+
+            Mobile Development
+            Framework seperti React Native dan Ionic memungkinkan pembuatan aplikasi mobile dengan JavaScript.
+            Game Development
+            Dengan library seperti Phaser.js atau Three.js, JavaScript dapat digunakan untuk membuat game 2D dan 3D berbasis web.
+            
+            Internet of Things (IoT)
+            JavaScript bahkan digunakan untuk mengendalikan perangkat keras melalui Node.js di platform seperti Johnny-Five.</p>
+        </article
+
     </main>
 </body>
 </html>
