@@ -119,14 +119,16 @@
       </div>
     </div>
     <!-- Navbar -->
-    <nav>
+    <nav style="border: 1px solid black;">
       <!-- Tombol Hamburger -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-
-      <!-- Menu -->
-      <ul id="myLinks">
+      <!-- sidebar -->
+       <div class="hamburger-button">
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+       </div>
+      
+      <ul id="sidebar" class="sidebar">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="html-article.html">HTML</a></li>
         <li><a href="css-article.html">CSS</a></li>
@@ -134,10 +136,20 @@
         <li><a href="penutup.html">Penutup</a></li>
       </ul>
 
-      <!-- Text Berjalan -->
-      <marquee behavior="scroll" direction="left">
-        TEAM SEVEN │ SEKTE CRIPTO VERSI PENUS │ JAYA JAYA JAYA JAYA JAYA
-      </marquee>
+      <!-- Menu -->
+      <ul id="myLinks" class="myLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="html-article.html">HTML</a></li>
+        <li><a href="css-article.html">CSS</a></li>
+        <li><a href="js-article.html">JavaScript</a></li>
+        <li><a href="penutup.html">Penutup</a></li>
+
+        <!-- Text Berjalan -->
+        <marquee behavior="scroll" direction="left">
+          TEAM SEVEN │ SEKTE CRIPTO VERSI PENUS │ JAYA JAYA JAYA JAYA JAYA
+        </marquee>
+      </ul>
+
     </nav>
     <!-- Judul -->
     <header><h1>Website Tentang Sejarah HTML,CSS,Dan JavaScript</h1></header>

@@ -4,90 +4,96 @@
   --base-nav: purple;
 }
 
+.hamburger-button {
+  display: none;
+}
+
 .darkmode {
   --base-color: black;
   --base-text: white;
   --base-nav: violet;
 }
 
-/* GLOBAL STYLING */
 html {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-
+/* han, ini styling default body dan navbar yang bakal buat light mode, lu sesuain aja ini */
 body {
-  margin: 0;
+  margin: 0%;
   line-height: 1.6;
-  background-color: var(--base-color);
-  color: var(--base-text);
+  background-color: white;
 }
-
-/* NAVBAR */
+/* Navbar */
 nav {
-  background: var(--base-color);
-  padding: 5px 0;
+  background: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
   position: sticky;
   z-index: 1000;
   top: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid black;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--base-text);
-  font-size: 22px;
-  font-weight: bold;
-  transition: 0.2s ease;
+  padding-top: 1px;
+  border: 5px solid black;
 }
 
 nav a:hover {
-  color: var(--base-nav);
+  color: purple;
   transform: scale(1.1);
   text-decoration: underline;
 }
 
 ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  /* display: flex;     */
   gap: 50px;
-  padding: 0;
-  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 li {
   font-size: 20px;
+  /* display: flex;
+  justify-content: center; */
 }
-
-/* HEADER */
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
   background-color: #ae75da;
-  padding: 10px 20px;
 }
 
-.logo-img img {
+.logo-img {
+  background-color: #ae75da;
+}
+
+strong {
+  margin-left: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+
+img {
   border-radius: 50%;
   margin-left: 15px;
 }
 
-.team-seven strong {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 35px;
-  color: white;
-}
+/* .sekte7 {
+  margin-left: 950px;
+} */
 
-/* SWITCH MODE BUTTON */
+/* ini harusnya buat tombol switch button ada setelah logo sekte 7 ya karena nnti kan dihapus */
+/* styling untuk switch button */
 .switchmode {
-  margin-right: 40px;
+  margin-left: 900px;
 }
-
 label {
   width: 100px;
   height: 40px;
@@ -97,6 +103,7 @@ label {
   border-radius: 40px;
   box-shadow: inset 0px 0px 15px black, inset 0px 0px 25px gray;
   cursor: pointer;
+  z-index: 0;
   transition: 0.3s;
 }
 
@@ -109,11 +116,15 @@ label::after {
   left: 10px;
   background: linear-gradient(135deg, var(--base-nav), var(--base-color));
   border-radius: 50%;
+  box-shadow: none 0px 0px 20px white, none 0px 0px 30px rgb(23, 14, 14);
+  z-index: 1;
   transition: 0.3s;
 }
 
 input {
-  display: none;
+  width: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 input:checked + label {
@@ -139,6 +150,7 @@ label svg.sun {
 }
 
 label svg.moon {
+  top: 12px;
   left: 75px;
   fill: black;
 }
@@ -151,9 +163,9 @@ input:checked + label svg.moon {
   fill: white;
 }
 
-/* ARTICLE */
 article {
-  margin: 40px 200px;
+  margin-left: 200px;
+  margin-right: 200px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -168,6 +180,9 @@ h1 {
   background: linear-gradient(90deg, #000000, #bc12cf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: #bc12cf;
 }
 
 h2 {
@@ -175,41 +190,90 @@ h2 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* DARK MODE */
+/* nah ini buat lu styling dark modenya */
+/* styling dark mode */
 body.darkmode {
   background: var(--base-color);
   color: var(--base-text);
 }
 
-body.darkmode nav {
+body.darkmode > nav {
   background-color: var(--base-nav);
 }
-
-/* MENU & ICON */
+/* styling hamburger */
 .icon {
-  display: none; /* disembunyikan, akan muncul di layar kecil */
-  font-size: 24px;
-  cursor: pointer;
+  color: black;
+  /* display: none; */
+  justify-content: left;
+  display: left;
 }
 
-.menu-icon {
+.icon:hover {
+  color: black;
+  z-index: 100;
+}
+
+.myLinks {
   display: flex;
   justify-content: center;
+  width: 250px;
 }
 
-/* RESPONSIVE MODE */
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  display: none;
+  font-family: "roboto";
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(30, 135, 211, 0.5);
+  backdrop-filter: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.sidebar a {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
 @media only screen and (max-width: 768px) {
-  ul {
-    flex-direction: column;
+  .myLinks {
     display: none;
   }
 
-  ul.show {
+  .sidebar {
+    position: absolute;
+    background-color: lightblue;
+    height: 100vh;
     display: flex;
+    justify-content: left;
+    align-items: left;
   }
 
   .icon {
     display: block;
-    margin: 10px;
+    background-color: blue;
+    position: absolute;
+  }
+
+  .hamburger-button {
+    display: block;
   }
 }
