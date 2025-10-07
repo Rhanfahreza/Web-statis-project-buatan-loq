@@ -203,7 +203,7 @@ body.darkmode > nav {
 /* styling hamburger */
 .icon {
   color: black;
-  /* display: none; */
+  /* display: none; */          
   justify-content: left;
   display: left;
 }
@@ -222,7 +222,7 @@ body.darkmode > nav {
 .sidebar {
   height: 100vh;
   position: fixed;
-  display: none;
+  /* display: none; */
   font-family: "roboto";
   position: fixed;
   top: 20px;

@@ -19,7 +19,12 @@
     <!-- Gambar tea, dan gambar sekte cripto -->
     <div class="header">
       <div class="logo-img">
-        <img src="v[1].png" width="100px" alt="Logo website" />
+        <img
+          src="v[1].png"
+          width="100px"
+          alt="Logo website"
+          style="border-radius: 50%"
+        />
       </div>
       <div class="team-seven">
         <h1 class="Judul"><strong>│Team Seven </strong></h1>
@@ -125,98 +130,106 @@
         <li><a href="penutup.html">Penutup</a></li>
         <!-- text berjalan -->
         <marquee behavior="scroll" direction="left">
-          TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA
-          JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA
+          TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │JAYA JAYA JAYA JAYA JAYA JAYA
+          JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA
+          JAYA JAYA JAYA JAYA JAYA JAYA
         </marquee>
       </ul>
     </nav>
     <!-- Judul -->
     <header><h1>Website Tentang Sejarah HTML,CSS,Dan JavaScript</h1></header>
-    <div class="meme"><aside>
-    <img class="1"src="img\sektenolangloballoading.jpeg" width="100px" height="100px">
-    <img class="1"src="img\sektenolankriptonian" width="100px" height="100px">
-    <img class="1"src="img\sektenolanpengendali" width="100px" height="100px">
-    <img class="1"src="img\sekteultinolanritual.jpeg" width="100px" height="100px">
-    <img class="1"src="img\ultinolan.webp" width="100px" height="100px">
-    </aside></div>
+    <div class="meme">
+      <aside>
+        <img
+          class="meme2"
+          src="img\sektenolangloballoading.jpeg"
+          width="100px"
+          height="100px"
+        />
+        <img
+          class="meme2"
+          src="img\sektenolankriptonian"
+          width="100px"
+          height="100px"
+        />
+        <img
+          class="meme2"
+          src="img\sektenolanpengendali"
+          width="100px"
+          height="100px"
+        />
+        <img
+          class="meme2"
+          src="img\sekteultinolanritual.jpeg"
+          width="100px"
+          height="100px"
+        />
+        <img
+          class="meme2"
+          src="img\ultinolan.webp"
+          width="100px"
+          height="100px"
+        />
+      </aside>
+    </div>
     <!--   Form Rating -->
-       <article>
-        <form action="https://formsubmit.co/team7cripto@gmail.com" method="POST" class="review-form">
+    <article>
+      <p>
+        Dari pembahasan di atas, dapat disimpulkan bahwa HTML, CSS, dan JavaScript
+        memiliki peran yang sangat penting dalam membentuk tampilan serta fungsi
+        sebuah website. Ketiganya saling melengkapi dan menjadi dasar bagi para
+        pengembang web di seluruh dunia. Dengan mempelajari sejarah dan
+        perkembangannya, kita dapat memahami bagaimana teknologi web berkembang
+        hingga seperti sekarang ini.
+      </p>
       <h3>⭐ Write a Review</h3>
-
-      <div class="form-group">
-        <label for="product-rating">Overall Rating *</label>
-        <div class="rating-input">
-          <input type="radio" id="star5" name="rating" value="5" />
-          <label for="star5">⭐⭐⭐⭐⭐ Excellent</label>
-
-          <input type="radio" id="star4" name="rating" value="4" />
-          <label for="star4">⭐⭐⭐⭐ Good</label>
-
-          <input type="radio" id="star3" name="rating" value="3" />
-          <label for="star3">⭐⭐⭐ Average</label>
-
-          <input type="radio" id="star2" name="rating" value="2" />
-          <label for="star2">⭐⭐ Poor</label>
-
-          <input type="radio" id="star1" name="rating" value="1" />
-          <label for="star1">⭐ Terrible</label>
+      <form
+        action="https://formsubmit.co/team7cripto@gmail.com"
+        method="POST"
+        class="review-form"
+      >
+        
+        <div class="form-group">
+          <label for="review-title">Review Title *</label>
+          <input
+            type="text"
+            id="review-title"
+            name="title"
+            placeholder="Sum up your review in one line"
+            required
+            maxlength="100"
+          />
         </div>
-      </div><br>
 
-      <div class="form-group">
-        <label for="review-title">Review Title *</label>
-        <input
-          type="text"
-          id="review-title"
-          name="title"
-          placeholder="Sum up your review in one line"
-          required
-          maxlength="100"
-        />
-      </div>
+        <div class="form-group">
+          <label for="review-text">Your Review *</label>
+          <textarea
+            id="review-text"
+            name="review"
+            placeholder="Share your experience with this website..."
+            required
+            minlength="20"
+            maxlength="1000"
+            rows="6"
+          ></textarea
+          ><br />
+          <small>Minimum 20 characters required</small>
+        </div>
+        <br /><br />
 
-      <div class="form-group">
-        <label for="review-text">Your Review *</label>
-        <textarea
-          id="review-text"
-          name="review"
-          placeholder="Share your experience with this website..."
-          required
-          minlength="20"
-          maxlength="1000"
-          rows="6"
-        ></textarea><br>
-        <small>Minimum 20 characters required</small>
-      </div><br><br>
-
-      <div class="form-group">
-        <label for="recommend">Did you like this website</label>
-        <select id="recommend" name="recommend" required>
-          <option value="">Choose...</option>
-          <option value="yes">👍 Yes, definitely!</option>
-          <option value="maybe">🤔 Maybe</option>
-          <option value="no">👎 No, not really</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="photos">📸 Add Photos (Optional)</label>
-        <input
-          type="file"
-          id="photos"
-          name="photos"
-          accept="image/*"
-          multiple
-        />
-        <small>Upload up to 5 photos of the product</small>
-      </div>
-
-      <div class="form-actions">
-        <button type="submit">📝 Submit Review</button>
-      </div>
-    </form>
-
+        <div class="form-group">
+          <label for="recommend">Did you like this website</label>
+          <select id="recommend" name="recommend" required>
+            <option value="">Choose...</option>
+            <option value="yes">👍 Yes, definitely!</option>
+            <option value="maybe">🤔 Maybe</option>
+            <option value="no">👎 No, not really</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit">📝 Submit Review</button>
+        </div>
+      </form>
     </article>
     <!-- lalu styling sampai sini -->
   </body>
