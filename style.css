@@ -201,8 +201,9 @@ body.darkmode > article {
 
 aside {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   justify-content: center;
+  margin: 1px;
 }
 
 /* styling responsive */
@@ -353,9 +354,15 @@ aside {
     width: 50px;
   } */
 
-  /* aside img {
-    width: 50px;
+  aside img {
+    background-size: contain;
+    border: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 20% ;
     height: auto;
-    justify-content: center;
-  } */
+    
+    
+  }
 }
